@@ -1,12 +1,28 @@
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+/* ### Neutral */
+
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
 body{
     font-family: 'Red Hat Display', sans-serif;
-    background-image: url("../images/pattern-background-desktop.svg");
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: var(--pale-blue);
+}
+
+.bgimage{
+    background: url("../images/pattern-background-desktop.svg") no-repeat center/cover;
+    z-index: 1;
 }
 
 p{
@@ -16,4 +32,10 @@ p{
 .bitch{
     display: flex;
     flex-direction: column;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    background-color: transparent;
 }
